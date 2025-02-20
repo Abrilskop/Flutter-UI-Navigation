@@ -1,26 +1,21 @@
-/*AUTOR: Gianella Alexandra Ramos Ticahuanca */
-
-import "package:flutter/material.dart";
-
-import 'package:tabbarynavegacion/screens/tabs_screen.dart';
-
+import 'package:flutter/material.dart';
+import 'package:tabbarynavegacion/screens/tabs_screen.dart';  // Importa la pantalla que contiene las pestañas
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyApp());  // Llama a runApp para ejecutar la aplicación
 }
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // este widget 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Material App',
-      initialRoute: 'tabs',
-      routes:{
-        'tabs': (context) => const TabsScreen()
+      debugShowCheckedModeBanner: false,  // Desactiva la etiqueta de "debug" en la app
+      title: 'Material App',  // Título de la aplicación
+      initialRoute: 'tabs',  // Establece la ruta inicial
+      routes: {
+        'tabs': (context) => const TabsScreen()  // Asocia la ruta 'tabs' con la pantalla TabsScreen
       }
     );
   }
