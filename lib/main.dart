@@ -11,13 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter DEMO', 
+      title: 'NOTITAS UWU', 
       debugShowCheckedModeBanner: false, // Título de la aplicación
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'TAXI CONO'),
+      home: const MyHomePage(title: 'NOTITAS UWU'),
     );
   }
 }
@@ -57,3 +57,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
