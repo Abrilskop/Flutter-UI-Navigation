@@ -6,28 +6,38 @@ class TabsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4, // Número de pestañas
+      length: 10,
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('TAXI CONO!'),
-          bottom: const TabBar(
-            labelColor: Color.fromARGB(255, 194, 66, 66),
-            unselectedLabelColor: Colors.grey,
-            tabs: [
-              Tab(icon: Icon(Icons.directions_car_outlined)), // Ícono para la primera pestaña
-              Tab(icon: Icon(Icons.directions_transit_filled_outlined)), // Ícono para la segunda pestaña
-              Tab(icon: Icon(Icons.directions_bike_sharp)), // Ícono para la tercera pestaña
-              Tab(icon: Icon(Icons.directions_walk_sharp)), // Ícono para la cuarta pestaña
-            ],
-          ),
-        ),
-        body: const SafeArea(
-          child: TabBarView(
-            children: [
-              Icon(Icons.directions_car_outlined, size: 100),
-              Icon(Icons.directions_transit_filled_outlined, size: 100),
-              Icon(Icons.directions_bike_sharp, size: 100),
-              Icon(Icons.directions_walk_sharp, size: 100),
+        body: SafeArea(
+          child: Column(
+            children: const [
+              TabBar(
+                isScrollable: true,
+                labelColor: Color.fromARGB(255, 211, 200, 200),
+                unselectedLabelColor: Colors.grey,
+                tabs: [
+                  Tab(text: 'Tab 1'),
+                  Tab(text: 'Tab 2'),
+                  Tab(text: 'Tab 3'),
+                  Tab(text: 'Tab 4'),
+                  Tab(text: 'Tab 5'),
+                  Tab(text: 'Tab 6'),
+                  Tab(text: 'Tab 7'),
+                  Tab(text: 'Tab 8'),
+                  Tab(text: 'Tab 9'),
+                  Tab(text: 'Tab 10'),
+                ],
+              ),
+              Expanded(
+                child: TabBarView(
+                  children: [
+                    Icon(Icons.directions_car_outlined, size: 100),
+                    Icon(Icons.directions_transit_filled_outlined, size: 100),
+                    Icon(Icons.directions_bike_sharp, size: 100),
+                    Icon(Icons.directions_walk_sharp, size: 100),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
