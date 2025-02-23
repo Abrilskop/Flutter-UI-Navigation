@@ -42,10 +42,6 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
    ```bash
    flutter run
    ```
-
-## 📸 Capturas de Pantalla
-*(Agrega capturas de la aplicación en funcionamiento si es posible.)*
-
 ## 🤝 Contribuciones
 Si deseas contribuir con mejoras al código o documentación:
 1. Haz un **fork** del repositorio.
