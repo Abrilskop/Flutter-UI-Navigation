@@ -29,8 +29,9 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/abrilskop/tabbarynavegacion.git
-   cd tabbarynavegacion
+   git clone https://github.com/abrilskop/flutter-ui-navigation
+.git
+   cd flutter-ui-navigation
    ```
 
 2. **Instalar las dependencias**
